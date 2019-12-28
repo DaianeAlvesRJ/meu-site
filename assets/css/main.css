@@ -104,14 +104,100 @@ input, select, textarea {
 		font-weight: 400;
 		line-height: 1.75em;
 	}
+/*Menu */
+
+section#nav-test {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	#nav-container {
+		position: relative;
+		margin: 60px auto;
+		box-sizing: border-box;
+
+		ul {
+			padding-left: 30px;
+			padding-right: 30px;
+			margin: 0;
+
+			li {
+				display: flex;
+				align-items: center;
+				cursor: pointer;
+				user-select: none;
+
+				a {
+					color: rgb(241, 241, 241);
+				}
+			}
+		}
+
+	}
+	
+	h1 {
+		margin-top: 30px;
+		font-weight: 500;
+		color: #363636;
+	}
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  height: 20px;
+  margin-top: -60px;
+  list-style: none;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+
+  a {
+    font-size: 22px;
+    color: #363636;
+    text-decoration: none;
+    transition: all 0.45s;
+  }
+
+  &:hover {
+    animation: line 1s;
+  }
+
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #363636;
 		text-decoration: none;
 	}
 
